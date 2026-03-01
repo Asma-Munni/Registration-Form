@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!--Daisy UI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!--font family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ 
+<style>
+    *{
+      font-family: "Inter", sans-serif;   
+    }
+</style>
+
+</head>
+<body class="bg-slate-100 ">
+    <section id="createAcount">
+        <div class="md:flex  w-[1280px] max-h-[675px] container items-center justify-center   mx-auto">
+            <div class="text  bg-white p-11 space-y-2  ">
+                <div class="flex  font-bold text-2xl text-[#005ce0] gap-2">
+                    <img src="./images/Logo (9).png" alt="">
+                    <h3>wema</h3>
+                </div>
+                <h1 class="text-[#000000] font-bold text-[32px]">Create your Account</h1>
+                <div class="flex gap-4">
+                    <button class="flex border border-[#868686] px-4 py-2 rounded-[30px] gap-2 text-center"><img src="./images/Google.png" alt="">
+                    <p>Google</p></button>
+                    <button class="flex border border-[#868686] px-4 py-2 rounded-[30px] gap-2 text-center"><img src="./images/Facebook.png" alt="">
+                    <p>Facebook</p></button>
+                    
+                   
+                </div>
+                <div class="divider">or continue with email</div>
+                <div class="card bg-base-100 w-full max-w-sm  ">
+      <div class="card-body">
+        <fieldset class="fieldset space-y-2">
+          
+          <label class="input validator">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+    </g>
+  </svg>
+  <input class="bg-[#fafbfe] rounded-[10px]" type="email" placeholder="Email" required />
+</label>
+<div class="validator-hint hidden">Enter valid email address</div>
+          
+          <!--password-->
+          <label class="input validator">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+      ></path>
+      <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+    </g>
+  </svg>
+  <input
+    class="bg-[#fafbfe] rounded-[10px]"
+    type="password"
+    required
+    placeholder="Password"
+    minlength="8"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+  />
+</label>
+<p class="validator-hint hidden">
+  Must be more than 8 characters, including
+  <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
+</p>
+          <div class="flex items-center justify-between">
+            <a href="" class="flex items-center"><img src="./images/Tick Box.png" alt=""> Remember Me</a>
+            <a class="link link-hover text-[#005ce0] font-semibold">Forgot password?</a>
+        </div>
+          <button class="btn bg-[#498ae7] text-[#fafbfe] mt-4 rounded-[30px]">Sign Up</button>
+        </fieldset>
+        <div class="flex items-center gap-0 ">
+            <p>Don’t have an account?</p>
+        <a href="" class="text-[#005ce0] font-semibold">Sign Up</a>
+        </div>
+      </div>
+    </div>
+            </div>
+            <div class="image max-h-[675px] p-5 bg-[#005ce0]  ">
+              <div class="relative">
+                <img class="mx-auto  " src="./images/Ellipse 9.png" alt="">
+                <img class="absolute z-index-2 top-25 left-35" src="./images/Ellipse 8.png" alt="">
+                <img class="absolute top-30 left-50" src="./images/Window.png" alt="">
+                <img class="absolute top-20 left-30" src="./images/Slack.png" alt="">
+                <img class="absolute top-55 left-15" src="./images/wema (1).png" alt="">
+                <img class="absolute top-85 left-25" src="./images/google (1).png" alt="">
+              </div>
+               
+               
+                <p class="text-white text-center font-semibold text-[26px]">Connect with every Application</p>
+                <p class="text-white text-center font-semibold text-[18px]">Everything you need in a customizable dashboard</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
